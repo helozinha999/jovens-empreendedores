@@ -1,20 +1,51 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Ideias valem centavos. A execucao vale milhoes</title>
-</head>
-<body>
-    <div class="caixa-principal">
-        <h1>Ideias valem centavos. A execucao vale milhoes</h1>
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
-        <div class="caixa-resultado">
-            <p class="texto-resultado"></p>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#352f44" />
+    <title>Fábrica de Ideias — Jovens Empreendedores</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">STARTUP LAB · TURMA 17</p>
+          <h1>Fábrica de Ideias</h1>
         </div>
-    </div>
-    <script src="main.js"></script>
-</body>
+        <button id="restart-button" class="icon-button" type="button" aria-label="Reiniciar história">
+          ↻
+        </button>
+      </header>
+
+      <section class="status-panel" aria-label="Status da empresa">
+        <div class="status-item">
+          <span>Etapa</span>
+          <strong id="step-count">1</strong>
+        </div>
+        <div class="status-item">
+          <span>Confiança da equipe</span>
+          <strong id="trust-count">50%</strong>
+        </div>
+        <div class="status-item">
+          <span>Setor</span>
+          <strong id="zone-name">Garagem</strong>
+        </div>
+      </section>
+
+      <section id="game" class="game-card" aria-live="polite">
+        <div id="story-kicker" class="story-kicker"></div>
+        <h2 id="story-title"></h2>
+        <p id="story-text"></p>
+        <div id="choices" class="choices"></div>
+      </section>
+
+      <footer class="credits">
+        <span>Integrantes</span>
+        <strong>Heloise, 17 · Laura, 23</strong>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
